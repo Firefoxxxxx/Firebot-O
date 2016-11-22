@@ -29,6 +29,24 @@ function chatBot() {
 		if(this.match('^no+(\\s|!|\\.|$)'))
 			return "stoopid >:(";
 		
+		if(this.match('bobber'))
+			return "hes probably eating dinner";
+		
+		if(this.match('poonta'))
+			return "poontas probably high, drunk or tending to his flowers in belgian waffle land";
+			
+		if(this.match('shadowjango'))
+			return "shadowjangos probably playing ogrewatch saying WHY? WHY? WHY?";
+		
+		if(this.match('polarbearcalvary'))
+			return "firebot thinks polar probatbly needs heals, firebot thinks polar should teach his students the way of the NOOOOO";
+		
+		if(this.match('sazeman'))
+			return "sazemans real name is peter";
+		
+		if(this.match('epicvictory'))
+			return "epics stoopid";
+		
 		if(this.match('(cya|bye|see ya|ttyl|talk to you later)'))
 			return ["GET OUT OF HERE", "stooopid"];
 		
