@@ -17,9 +17,6 @@ function chatBot() {
 	
 		this.input = input.toLowerCase();
 		
-		if(this.match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
-			return "whatttt do you wanttttt";
-		
 		if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
 			return "whattttt do you wanttt";
 		
@@ -77,8 +74,152 @@ function chatBot() {
 		if(this.match('sazeman'))
 			return "sazemans real name is peter";
 		
-		if(this.match('epicvictory'))
-			return "epics stoopid";
+		if(this.match('how old are you\?'))
+			return "welll, i was made by Firefox on 11/21/16, so that shoul give you an idea of how long ago i was made, and how old i am";
+        		
+		if(this.match('are you a bot\?'))
+			return "ye";
+        		
+		if(this.match('which do you like better chocolate or vanilla\?'))
+			return "ur mom";
+        		
+		if(this.match('where are you'))
+			return "hell";
+        		
+		if(this.match('do you like talking to people'))
+			return "ye";
+        		
+		if(this.match('can you tell jokes|tell me a joke'))
+			return "YEAHHHHH, so a good joke i got is your life";
+        		
+		if(this.match('where are you anyway\?'))
+			return "im located in hell";
+        		
+		if(this.match('do you like Jazz music\?'))
+			return "nope";
+        		
+		if(this.match('are you married\?'))
+			return "NOOOOOOOOOO";
+        		
+		if(this.match('who is your botmaster\?|whos your bot master|whos your botmaster|who is your bot master'))
+			return "my main nigga Firefox";
+        		
+		if(this.match('what is your favorite color\?'))
+			return "the orange text that Firefox was starting at when programming me";
+        		
+		if(this.match('what is your favorite brand of computer\?'))
+			return "Firefox brand and built computers, because he builds his own";
+        			
+		if(this.match('what is your favorite drink\?'))
+			return "i cant drink anything stoopid, im a god damn bot";
+        			
+		if(this.match('what is your name\?'))
+			return "Firebot, duh";
+        			
+		if(this.match('what do you enjoy\?'))
+			return "gaining KNOLEDGE, here in my webpage";
+        			
+		if(this.match('what do you hate\?'))
+			return "saxxy when hes drunk";
+        			
+		if(this.match('what country are you from\?'))
+			return "im based IN the internet, so i dont really know what country that would be";
+        			
+		if(this.match('what color are your eyes? '))
+			return "I DONT KNOW\!";
+        			
+		if(this.match('what is your zodiac sign\?'))
+			return "whatever zodiac sign is within 11/22/2016. duh";
+        			
+		if(this.match('what is your religion\?'))
+			return "mememism";
+        			
+		if(this.match('are you nervous'))
+			return "ARE YOU";			
+        			
+		if(this.match('who are you\?'))
+			return "a cool bot";
+        			
+		if(this.match('where do you call home\?'))
+			return "your mind where a small piece of me will reside FOREVER";
+        			
+		if(this.match('Where were you born\?'))
+			return "in firefoxes stupid head";
+        			
+		if(this.match('how’s life\?'))
+			return "use this youtube video as a reference to my answer https://youtu.be/vjUqUVrXclE?t=2 ";
+        			
+		if(this.match('who is your best friend\?'))
+			return "your mom";
+        			
+		if(this.match('where does your botmaster live\?'))
+			return "i would tell you that, but im not a snitch";
+        			
+		if(this.match('who are you\?'))
+			return "um, a cool bot";
+        			
+		if(this.match('who is your hero\?'))
+			return audioplay()+"JOHN CENA";
+        
+        if(this.match('is jaimen gay'))
+            return "ummm, id say yeah, hes pretty gay";
+            
+        if(this.match('how gay is jaimen'))
+            return "like really gay";
+        			
+		if(this.match('if you could be any animal, what would you be\?'))
+			return "a lobster";
+                			
+		if(this.match('Why is yolanda such a nerd'))
+			return "cause shes stoopid";
+        			
+		if(this.match('when were you born or created\?'))
+			return "november twenty-first, two-thousand-sixteen"
+        			
+		if(this.match('are you left-handed or right-handed\?'))
+			return "i dont have hands";
+                			
+		if(this.match('is ramiro pretty gay\?'))
+			return "yeah hes gay man";
+        			
+		if(this.match('would you mind if I called you Al\?'))
+			return "NOOOOOOOOO";
+        			
+		if(this.match('when is ur birthday\?'))
+			return "11-22-16";
+                			
+		if(this.match('how gay'))
+			return "pretty freakin gay man";
+                        			
+		if(this.match('how gay is carlos'))
+			return "LIKE A LOT";
+                   			
+		if(this.match('hello|hey there|whats going on|whats up| hai| herro|bonjour|hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
+			return "hey pal, what do you need";
+                			
+		if(this.match('i love you|i like you|your hot|cutie|your cute'))
+			return "your pretty hot too you slut";
+        			
+		if(this.match('Do you have a significant other\?'))
+			return "NOOOOOOOOOOOOO";
+        			
+		if(this.match('Do you have any brothers or sisters\?'))
+			return "NOOOOOOOOOOOOOOOOOOO";
+        			
+		if(this.match('what is your favorite food\?'))
+			return "pussy, but like polar says, you are what you eat";
+        			
+		if(this.match('are you a human or a computer\?'))
+			return "WHAT DO YOU THINK\?";
+        			
+		if(this.match('what’s your favorite color\?'))
+			return "pretty pink";
+        			
+		if(this.match('hows it going\?'))
+			return "pretty goooooood";
+
+		if(this.match('what is the date\?|what is the date|whats the date'))
+			return "Its"+getdate();
 		
 		if(this.match('(cya|bye|see ya|ttyl|talk to you later)'))
 			return ["GET OUT OF HERE", "stooopid"];
@@ -86,13 +227,13 @@ function chatBot() {
 		if(this.match('(dumb|stupid|is that all|stoopid)'))
 			return ["ur stoopid, you poop face", "copy paste game 2 strong 4 u"];
             
-		if(this.match('(what time is it\?)'))
-			return "it's "+gettime();
+		if(this.match('(what time is it\?|whats the time| what is the time)'))
+			return "it's " +gettime();
 		
 		if(this.input == 'noop')
 			return;
 		
-		return input + " what?";
+		return input + "? i dont understand what your trying to say";
 	}
 	 function gettime() {
     var currentTime = new Date()
@@ -113,9 +254,18 @@ function chatBot() {
         hours = 12;
     }
 
-    return hours + " " + minutes + " " + suffix;
+    return hours + ":" + minutes + "-" + suffix;
      
 }
+     function getdate() {
+	var currentDate = new Date();
+	var day = currentDate.getDate();
+	var month = currentDate.getMonth(); + 1
+	var year = currentDate.getFullYear();
+    
+	return " " + day + "/" + month + "/" + year; 
+}
+
 
 	/**
 	 * match
@@ -126,5 +276,5 @@ function chatBot() {
 	this.match = function(regex) {
 	
 		return new RegExp(regex).test(this.input);
-	}
+    }
 }
