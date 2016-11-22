@@ -86,7 +86,7 @@ function chatBot() {
 		if(this.match('(dumb|stupid|is that all|stoopid)'))
 			return ["ur stoopid, you poop face", "copy paste game 2 strong 4 u"];
             
-		if(this.match('(what time is it?)'))
+		if(this.match('(what time is it?\)'))
 			return "it's "+gettime();
 		
 		if(this.input == 'noop')
