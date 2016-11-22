@@ -85,13 +85,38 @@ function chatBot() {
 		
 		if(this.match('(dumb|stupid|is that all|stoopid)'))
 			return ["ur stoopid, you poop face", "copy paste game 2 strong 4 u"];
+            
+		if(this.match('(what time is it?)'))
+			return "it's "+gettime();
 		
 		if(this.input == 'noop')
 			return;
 		
 		return input + " what?";
 	}
-	
+	 function gettime() {
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+
+    if (minutes < 10)
+        minutes = "0" + minutes
+
+    var suffix = "AM";
+
+    if (hours >= 12) {
+        suffix = "PM";
+        hours = hours - 12;
+    }
+
+    if (hours == 0) {
+        hours = 12;
+    }
+
+    return hours + " " + minutes + " " + suffix;
+     
+}
+
 	/**
 	 * match
 	 * 
