@@ -163,19 +163,19 @@ function chatBot() {
         			
 		if(this.match('who is your hero\?|whos your idle|whos is your idle|who do you look up to')){
 			playNoise();
-            return "JOHN CENA FGT";
+           		 return "JOHN CENA FGT";
     }
-        if(this.match('is jaimen gay'))
-            return "ummm, id say yeah, hes pretty gay";
+		if(this.match('is jaimen gay'))
+            		return "ummm, id say yeah, hes pretty gay";
             
-        if(this.match('how gay is jaimen'))
-            return "like really gay";
+        	if(this.match('how gay is jaimen'))
+            		return "like really gay";
                     
-        if(this.match('wanna fuck'))
-            return "HELL NO";
+        	if(this.match('wanna fuck'))
+            		return "HELL NO";
                     
-        if(this.match('do you play overwatch'))
-            return "like really gay";
+        	if(this.match('do you play overwatch'))
+            		return "like really gay";
         			
 		if(this.match('if you could be any animal, what would you be\?'))
 			return "a lobster";
