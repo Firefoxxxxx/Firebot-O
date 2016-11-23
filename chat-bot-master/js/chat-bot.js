@@ -28,6 +28,9 @@ function chatBot() {
 		
 		if(this.match('bobber'))
 			return "hes probably eating dinner";
+        		
+		if(this.match('ye'))
+			return "NOOOOOOOOOOOOOOOO";
 		
 		if(this.match('poonta'))
 			return "poontas probably high, drunk or tending to his flowers in belgian waffle land";
@@ -49,7 +52,7 @@ function chatBot() {
 		
 		if(this.match('what makes sazeman mad'))
 			return "waking up sleeping people in overwatch duh, like bastions";
-		
+        
 		if(this.match('do you wanna do physics'))
 			return "YEEEAAAAAhhhhhhhh";
 		
@@ -58,10 +61,7 @@ function chatBot() {
 		
 		if(this.match('saxxy'))
 			return "saxxys probably drunk and high, and hes probably playing borderlands, maybe";
-		
-		if(this.match('ye'))
-			return "yeeeee";
-		
+
 		if(this.match('what are you'))
 			return "im actually an almost exact replica of the real firefox, exccept im DIGITALLLLLL";
 		
@@ -73,6 +73,9 @@ function chatBot() {
 				
 		if(this.match('sazeman'))
 			return "sazemans real name is peter";
+        				
+		if(this.match('nothing'))
+			return "if you dont need anything then GET THE FUCK OUTTA HERE";
 		
 		if(this.match('how old are you\?'))
 			return "welll, i was made by Firefox on 11/21/16, so that shoul give you an idea of how long ago i was made, and how old i am";
@@ -125,8 +128,8 @@ function chatBot() {
 		if(this.match('what country are you from\?'))
 			return "im based IN the internet, so i dont really know what country that would be";
         			
-		if(this.match('what color are your eyes? '))
-			return "I DONT KNOW\!";
+		if(this.match('what color are your eyes|what is your eye color'))
+			return "I DONT KNOW, I DONT HAVE EYES";
         			
 		if(this.match('what is your zodiac sign\?'))
 			return "whatever zodiac sign is within 11/22/2016. duh";
@@ -147,7 +150,7 @@ function chatBot() {
 			return "in firefoxes stupid head";
         			
 		if(this.match('how’s life\?'))
-			return "use this youtube video as a reference to my answer https://youtu.be/vjUqUVrXclE?t=2 ";
+			return "use this youtube video as a reference to my answer https://youtu.be/vjUqUVrXclEt=2";
         			
 		if(this.match('who is your best friend\?'))
 			return "your mom";
@@ -158,13 +161,20 @@ function chatBot() {
 		if(this.match('who are you\?'))
 			return "um, a cool bot";
         			
-		if(this.match('who is your hero\?'))
-			return audioplay()+"JOHN CENA";
-        
+		if(this.match('who is your hero\?|whos your idle|whos is your idle|who do you look up to')){
+			playNoise();
+            return "JOHN CENA FGT";
+    }
         if(this.match('is jaimen gay'))
             return "ummm, id say yeah, hes pretty gay";
             
         if(this.match('how gay is jaimen'))
+            return "like really gay";
+                    
+        if(this.match('wanna fuck'))
+            return "HELL NO";
+                    
+        if(this.match('do you play overwatch'))
             return "like really gay";
         			
 		if(this.match('if you could be any animal, what would you be\?'))
@@ -194,7 +204,7 @@ function chatBot() {
 		if(this.match('how gay is carlos'))
 			return "LIKE A LOT";
                    			
-		if(this.match('hello|hey there|whats going on|whats up| hai| herro|bonjour|hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
+		if(this.match('hello | hey there | whats going on | whats up | hai| herro|bonjour|hi|hello|hey|hola|howdy|hilo|halo|what is the up|whats up|hey bud|hey pal|hey'))
 			return "hey pal, what do you need";
                 			
 		if(this.match('i love you|i like you|your hot|cutie|your cute'))
@@ -233,7 +243,7 @@ function chatBot() {
 		if(this.input == 'noop')
 			return;
 		
-		return input + "? i dont understand what your trying to say";
+		return input + "? I haven't been programmed to understand that, please tell Firefox about it nerd";
 	}
 	 function gettime() {
     var currentTime = new Date()
@@ -265,8 +275,10 @@ function chatBot() {
     
 	return " " + day + "/" + month + "/" + year; 
 }
-
-
+     function playNoise() { 
+    var audio = new Audio('sound/john.mp3'); 
+    audio.play(); 
+}
 	/**
 	 * match
 	 * 
