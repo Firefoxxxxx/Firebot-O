@@ -70,6 +70,9 @@ function chatBot() {
 		
 		if(this.match('wanna play overwatch'))
 			return "nooooooooooooo, gawwwdddd";
+        		
+		if(this.match('fight me'))
+			return "later";
 				
 		if(this.match('you suck|your a dumb bot|firefox is stupid|firefox is stoopid|your dumb|your gay|faggot|fuck you|stupid bot|your useless|fight me fgt|fit me fgt|fight me faggot'))
 			return "What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn’t, you didn’t, and now you’re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You’re fucking dead, kiddo.";
@@ -168,13 +171,13 @@ function chatBot() {
 		if(this.match('is jaimen gay'))
             		return "ummm, id say yeah, hes pretty gay";
             
-     	        if(this.match('how gay is jaimen'))
-           	        return "like really gay";
+        	if(this.match('how gay is jaimen'))
+            		return "like really gay";
                     
-        	if(this.match('wanna fuck'))
-            		return "HELL NO";
+       		if(this.match('wanna fuck'))
+           		return "HELL NO";
                     
-        	if(this.match('do you play overwatch'))
+       	 	if(this.match('do you play overwatch'))
             		return "i dont have hands so i cant play it, but FIREFOX DOES";
         			
 		if(this.match('if you could be any animal, what would you be\?'))
@@ -187,7 +190,7 @@ function chatBot() {
 			return "november twenty-first, two-thousand-sixteen"
                     			
 		if(this.match('im a what\?|what')){
-                       playHarry();
+           	       playHarry();
 			return "ur a faggot harry"
     }
 		if(this.match('are you left-handed or right-handed\?'))
@@ -202,8 +205,14 @@ function chatBot() {
 		if(this.match('when is ur birthday\?'))
 			return "11-22-16";
                 			
+		if(this.match == 'im a faggot|im gay|im cool|i smell nice|im cute|i look good|im pretty|im hot|im a slut|im a whore|i am cute|i am gay|i am gay|i am pretty|i am hot|i am a slut| i am slutty|i am a whore')
+			return "good for you";
+                			
 		if(this.match('how gay'))
 			return "pretty freakin gay man";
+                        			
+		if(this.match('oh|o'))
+			return;
                         			
 		if(this.match('how gay is carlos'))
 			return "LIKE A LOT";
@@ -225,6 +234,9 @@ function chatBot() {
                 			
 		if(this.match('stop'))
 			return "NOOOOO YOUUUUU";
+                        			
+		if(this.match == 'ok')
+			return "ye";
         			
 		if(this.match('are you a human or a computer\?|are you human|are you a human|are you a robot|are you a bot|are you real|are you a computer|are you a computer or human'))
 			return "WHAT DO YOU THINK\?";
