@@ -17,7 +17,7 @@ function chatBot() {
 	
 		this.input = input.toLowerCase();
 		
-		if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
+		if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you') || this.match('hello'))
 			return "whattttt do you wanttt";
 		
 		if(this.match('l(ol)+') || this.match('(ha)+(h|$)') || this.match('lmao'))
@@ -35,9 +35,10 @@ function chatBot() {
 		if(this.match('poonta'))
 			return "poontas probably high, drunk or tending to his flowers in belgian waffle land";
 			
-		if(this.match('shadowjango'))
-			return "shadowjangos probably playing ogrewatch saying WHY? WHY? WHY?";
-		
+		if(this.match('whos shadowjango|who is shadowjango|shadowjango')){
+                        playJev()
+			return "a good way to get to know him is by listening to this";
+}
 		if(this.match('polarbearcalvary'))
 			return "firebot thinks polar probably needs heals, firebot thinks polar should teach his students the way of the NOOOOO";
 		
@@ -171,13 +172,13 @@ function chatBot() {
 		if(this.match('is jaimen gay'))
             		return "ummm, id say yeah, hes pretty gay";
             
-        	if(this.match('how gay is jaimen'))
-            		return "like really gay";
+       		 if(this.match('how gay is jaimen'))
+        		return "like really gay";
                     
-       		if(this.match('wanna fuck'))
-           		return "HELL NO";
+        	if(this.match('wanna fuck'))
+            		return "HELL NO";
                     
-       	 	if(this.match('do you play overwatch'))
+        	if(this.match('do you play overwatch'))
             		return "i dont have hands so i cant play it, but FIREFOX DOES";
         			
 		if(this.match('if you could be any animal, what would you be\?'))
@@ -190,7 +191,7 @@ function chatBot() {
 			return "november twenty-first, two-thousand-sixteen"
                     			
 		if(this.match('im a what\?|what')){
-           	       playHarry();
+            		playHarry();
 			return "ur a faggot harry"
     }
 		if(this.match('are you left-handed or right-handed\?'))
@@ -216,10 +217,10 @@ function chatBot() {
                         			
 		if(this.match('how gay is carlos'))
 			return "LIKE A LOT";
-                   			
-		if(this.match('hello |hey there|whats going on|whats up|hai| herro|bonjour|hi|hello|hey|hola|howdy|hilo|halo|what is the up|whats up|hey bud|hey pal|hey'))
+    		if(this.match('heythere|whats going on|whatsup|hai|herro|bonjour|hi|hey|hola|howdy|hilo|hallo|what is the up|whats up|hey bud|hey pal|hey')){
+            		playChile();
 			return "hey pal, what do you need";
-                			
+}
 		if(this.match('i love you|i like you|your hot|cutie|your cute'))
 			return "your pretty hot too you slut";
         			
@@ -300,6 +301,14 @@ function chatBot() {
 }
      function playHarry() { 
     var audio = new Audio('sound/faggot.mp3'); 
+    audio.play(); 
+}
+     function playChile() { 
+    var audio = new Audio('sound/chile.mp3'); 
+    audio.play(); 
+}
+     function playJev() { 
+    var audio = new Audio('sound/jev.mp3'); 
     audio.play(); 
 }
 	/**
